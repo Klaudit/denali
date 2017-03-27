@@ -193,7 +193,7 @@ export default class Application extends Addon {
 
   /**
    * Creates an HTTP or HTTPS server, depending on whether or not SSL configuration is present in
-   * config/environment.js
+   * config/environment.js. Also create a websocket server if configured.
    */
   private async createServer(port: number): Promise<void> {
     await new Promise((resolve) => {

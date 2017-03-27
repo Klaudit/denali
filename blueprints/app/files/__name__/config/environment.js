@@ -3,6 +3,9 @@ export default function environmentConfig(environment) {
     server: {
       port: process.env.PORT || 3000
     },
+    sockets: {
+      enabled: true
+    },
     // == Migrations
     //
     // If you are planning on using migrations with your database, uncomment this
